@@ -5,7 +5,7 @@
 	const sendEmail = (e: { preventDefault: () => void }) => {
 		e.preventDefault();
 
-		emailjs.sendForm('service_nckisme', 'template_n1cinwk', form.current, 'E77Er8tj4zvt7MOYy').then(
+		emailjs.sendForm('service_nckisme', 'template_n1cinwk', form.current, '').then(
 			(result) => {
 				console.log(result.text);
 			},
