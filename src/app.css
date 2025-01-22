@@ -1,0 +1,29 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('/src/lib/assets/font/Montserrat-VariableFont_wght.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PlaywriteIN';
+	src: url('/src/lib/assets/font/PlaywriteIN-VariableFont_wght.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'PlaywriteIN', sans-serif;
+}
