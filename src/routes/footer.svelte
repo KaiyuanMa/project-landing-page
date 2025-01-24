@@ -11,8 +11,8 @@
 		</p>
 		<hr class="h-[2px] w-20 bg-neutral-800" />
 		<div class="flex flex-col gap-4 text-center text-xl">
-			<p>info@kingdomcanada.com</p>
-			<p>+1 604.276.0563</p>
+			<p>info@kamilialangley.com</p>
+			<p>+1 (604) 837-8112</p>
 		</div>
 		<hr class="h-[2px] w-20 bg-neutral-800" />
 		<div class="flex flex-col items-center justify-center gap-0 text-sm">

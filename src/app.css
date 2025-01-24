@@ -3,32 +3,35 @@
 @import 'tailwindcss/utilities';
 
 @font-face {
-	font-family: 'Scacker';
-	src: url('/src/lib/assets/font/sackersgothicstd-light.otf') format('truetype');
-	font-weight: 300;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Scacker';
-	src: url('/src/lib/assets/font/sackersgothicstd-medium.otf') format('truetype');
+	font-family: 'Arapey';
+	src: url('/src/lib/assets/font/Arapey-Regular.ttf') format('truetype');
 	font-weight: 500;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Scacker';
-	src: url('/src/lib/assets/font/sackersgothicstd-heavy.otf') format('truetype');
-	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'AvenirRoman';
+	font-family: 'Arapey';
 	src: url('/src/lib/assets/font/avenir-roman.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Fontspring';
+	src: url('/src/lib/assets/font/Fontspring-DEMO-theseasons-reg.otf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('/src/lib/assets/font/avenir-roman\ 2.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
 body {
-	font-family: 'AvenirRoman', sans-serif;
+	font-family: 'Arapey', sans-serif;
 }
 
 h1,
@@ -37,6 +40,6 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Scacker', sans-serif;
+	font-family: 'Fontspring', sans-serif;
 	@apply uppercase;
 }

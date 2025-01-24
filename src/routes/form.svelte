@@ -69,7 +69,7 @@
 				</div>
 
 				<div>
-					<label for="guest_postal_code">Are you a Realtor?*</label>
+					<label for="guest_postal_code">Are you working with a Realtor?*</label>
 					<select class="formInput" name="is_working_with_realtor" required>
 						<option value="" disabled selected>Please Select</option>
 						<option value="yes">Yes</option>
