@@ -2,7 +2,7 @@
 	import AerialAngleOption3 from '$lib/assets/Drone photo/Aerial Angle Option 3.jpg';
 	import Dark001 from '$lib/assets/interiors/dark/001.jpg';
 	import Dark008 from '$lib/assets/interiors/dark/008.jpg';
-	import Dark009 from '$lib/assets/interiors/dark/009.jpg';
+	import Dark007 from '$lib/assets/interiors/dark/007.jpg';
 	import Light001 from '$lib/assets/interiors/light/001.jpg';
 	import Light008 from '$lib/assets/interiors/light/008.jpg';
 	import Light009 from '$lib/assets/interiors/light/009.jpg';
@@ -28,7 +28,7 @@
 				class="mt-1 h-[35rem] max-w-[90%] grow object-cover"
 			/>
 		</div>
-		<p class="my-10 text-wrap px-2 text-lg font-light text-rose-gold">
+		<p class="my-10 px-2 text-justify text-lg font-light text-rose-gold">
 			Kamilia by Kingdom Property is perfectly situated in the heart of Langley, offering unmatched
 			convenience and connectivity. Just steps away from the future SkyTrain station, residents will
 			enjoy effortless travel to surrounding areas and beyond. Proximity to a nearby university
@@ -49,7 +49,7 @@
 		<div class="absolute bottom-0 left-0 -z-10 h-[13.5rem] w-full bg-botanical" />
 	</div>
 	<div class="bg-botanical px-5 text-white">
-		<p class="my-10 text-wrap text-lg font-light">
+		<p class="my-10 text-justify text-lg font-light">
 			Designed to elevate everyday living, Kamilia offers more than just a home—it’s a gateway to a
 			dynamic and fulfilling lifestyle. Surrounded by vibrant city life and serene green spaces,
 			residents can seamlessly balance work, leisure, and relaxation. Whether you’re exploring
@@ -60,7 +60,7 @@
 	<div class="px-3 pt-3">
 		<div class="grid grid-cols-3 gap-1">
 			<img alt="The project logo" src={Dark001} class="gallery-item1 aspect-square object-cover" />
-			<img alt="The project logo" src={Dark009} class="aspect-square object-cover" />
+			<img alt="The project logo" src={Dark007} class="aspect-square object-cover" />
 			<img alt="The project logo" src={Dark008} class="aspect-square object-cover" />
 		</div>
 		<div class="mt-[0.25rem] grid grid-cols-3 gap-1">
@@ -69,7 +69,7 @@
 			<img alt="The project logo" src={Light008} class="aspect-square object-cover" />
 		</div>
 	</div>
-	<hr class="mx-auto mt-10 h-[2px] w-full bg-neutral-900" />
+	<hr class="mx-auto mt-10 h-[2px] w-full bg-pebble" />
 	<div class="p-2 px-3">
 		<h2 class="mb-10 mt-8 text-center text-3xl font-bold text-botanical">About Us</h2>
 
@@ -90,7 +90,7 @@
 			environments that enrich lives.
 		</p>
 	</div>
-	<hr class="mx-auto mt-10 h-[2px] w-full bg-neutral-900" />
+	<hr class="mx-auto mt-10 h-[2px] w-full bg-pebble" />
 </div>
 
 <style>

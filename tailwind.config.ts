@@ -9,7 +9,7 @@ export default {
 				white: '#F3F4F2',
 				botanical: 'rgb(72,134,124)',
 				pebble: 'rgb(187,190,191)',
-				'rose-gold': 'rgb(151,99,80)'
+				'rose-gold': 'rgb(170,110,88)'
 			}
 		}
 	},

@@ -29,21 +29,21 @@
 			<h1 class="text-2xl font-medium">Register Now</h1>
 			<div class="flex w-full flex-col gap-5 md:flex-row md:gap-10">
 				<div>
-					<label for="guest_first_name">First Name</label>
+					<label for="guest_first_name">First Name*</label>
 					<input class="formInput" type="text" name="guest_first_name" required />
 				</div>
 				<div>
-					<label for="guest_last_name">Last Name</label>
+					<label for="guest_last_name">Last Name*</label>
 					<input class="formInput" type="text" name="guest_last_name" required />
 				</div>
 			</div>
 			<div class="flex w-full flex-col gap-5 md:flex-row md:gap-10">
 				<div>
-					<label for="guest_email">Email</label>
+					<label for="guest_email">Email*</label>
 					<input class="formInput" type="email" name="guest_email" required />
 				</div>
 				<div>
-					<label for="guest_phone_number">Phone Number</label>
+					<label for="guest_phone_number">Phone Number*</label>
 					<input class="formInput" type="text" name="guest_phone_number" required />
 				</div>
 			</div>
@@ -53,15 +53,29 @@
 					<input class="formInput" type="text" name="guest_postal_code" />
 				</div>
 				<div>
-					<label for="guest_postal_code">How did you hear about us?*</label>
-					<select class="formInput" name="hear_about_us" required>
+					<label for="guest_postal_code">How did you hear about us?</label>
+					<select class="formInput" name="hear_about_us">
 						<option value="" class="text-gray-200" disabled selected> Please Select </option>
+						<option value="Google/Search Engine" class="text-gray-200" disabled selected>
+							Google/Search Engine
+						</option>
+						<option value="Social Media" class="text-gray-200" disabled selected>
+							Social Media
+						</option>
+						<option value="Friend/Family Referral" class="text-gray-200" disabled selected>
+							Friend/Family Referral
+						</option>
+						<option value="Online Ads" class="text-gray-200" disabled selected> Online Ads </option>
+						<option value="Event or Community Outreach" class="text-gray-200" disabled selected>
+							Event or Community Outreach
+						</option>
+						<option value="Other" class="text-gray-200" disabled selected> Other </option>
 					</select>
 				</div>
 
 				<div>
-					<label for="guest_postal_code">Are you a Realtor?*</label>
-					<select class="formInput" name="is_realtor" required>
+					<label for="guest_postal_code">Are you a Realtor?</label>
+					<select class="formInput" name="is_realtor">
 						<option value="" disabled selected>Please Select</option>
 						<option value="yes">Yes</option>
 						<option value="no">No</option>
@@ -69,8 +83,8 @@
 				</div>
 
 				<div>
-					<label for="guest_postal_code">Are you working with a Realtor?*</label>
-					<select class="formInput" name="is_working_with_realtor" required>
+					<label for="guest_postal_code">Are you working with a Realtor?</label>
+					<select class="formInput" name="is_working_with_realtor">
 						<option value="" disabled selected>Please Select</option>
 						<option value="yes">Yes</option>
 						<option value="no">No</option>
