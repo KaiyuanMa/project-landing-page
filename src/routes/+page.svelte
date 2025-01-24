@@ -7,8 +7,8 @@
 </script>
 
 <div class="bg-color-bg">
-	<div class="flex max-w-[1500px] flex-col gap-4 px-5 lg:mx-auto">
-		<Header />
+	<div class="flex max-w-[1500px] flex-col lg:mx-auto">
+		<!-- <Header /> -->
 		<LandingSection />
 		<Form />
 		<Content />

@@ -13,17 +13,6 @@
 		<div class="flex flex-col gap-4 text-center text-xl">
 			<p>info@kingdomcanada.com</p>
 			<p>+1 604.276.0563</p>
-			<div class="flex justify-center gap-5">
-				<a class="cursor-pointer duration-200 hover:opacity-35" href=""
-					><SquareFacebook class="h-6 w-6" /></a
-				>
-				<a class="cursor-pointer duration-200 hover:opacity-35" href=""
-					><SquareXTwitter class="h-6 w-6" /></a
-				>
-				<a class="cursor-pointer duration-200 hover:opacity-35" href=""
-					><SquareInstagram class="h-6 w-6" /></a
-				>
-			</div>
 		</div>
 		<hr class="h-[2px] w-20 bg-neutral-800" />
 		<div class="flex flex-col items-center justify-center gap-0 text-sm">

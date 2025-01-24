@@ -10,12 +10,40 @@
 	import Light003 from '$lib/assets/interiors/light/003.jpg';
 	import logo1 from '$lib/assets/logo1.png';
 	import logo2 from '$lib/assets/logo2.png';
+	import NE60 from '$lib/assets/Drone photo/NE 60 ft.jpg';
 </script>
 
-<div class="flex flex-col gap-3 font-thin">
-	<hr class="mx-auto mt-10 h-[2px] w-full bg-neutral-900" />
-	<div class="p-2">
-		<h2 class="mb-10 mt-8 text-center text-base font-medium">01. Title One</h2>
+<div class="relative flex flex-col font-thin">
+	<div class="flex flex-col px-2">
+		<div
+			class="absolute bottom-0 left-0 right-0 top-0 z-0 mx-auto h-[5rem] w-full bg-rose-gold"
+		></div>
+		<img alt="The project logo" src={AerialAngleOption2} class="z-10 h-[full] object-cover" />
+		<div class="mb-[5em] mt-[8em] text-center text-rose-gold">
+			<h2 class="text-3xl font-bold">
+				"Live Beautifully, <br /> Live Kamilia."
+			</h2>
+			<p class="mt-2 text-xs font-thin">The Avenue At The Heart Of It All</p>
+		</div>
+		<div class="mx-auto flex gap-2 text-rose-gold">
+			<h2 class="rotate-180 text-start text-3xl font-bold [writing-mode:vertical-lr]">Location</h2>
+			<img
+				alt="The project logo"
+				src={AerialAngleOption3}
+				class="mt-1 h-[35rem] w-[50%] grow object-cover"
+			/>
+		</div>
+		<p class="my-10 text-center text-base font-light text-rose-gold">
+			20675 Eastleigh Crescent Langley <br /> BC V3A 4C3 Canada
+		</p>
+	</div>
+	<div class="relative flex">
+		<img alt="The project logo" src={AerialAngleOption2} class="z-10 h-[full] object-cover px-3" />
+		<div class="absolute bottom-0 h-[5rem] w-full bg-botanical" />
+	</div>
+
+	<div class="text-w color flex flex-col bg-botanical px-3 py-10 text-center text-white">
+		<h2 class="mb-10 mt-4 text-center text-base font-medium">LIFESTYLE</h2>
 		<p class="font-thin">
 			Kamilia by Kingdom Property is an elegant new condominium nestled in the heart of Langley,
 			offering a harmonious blend of modern design and timeless sophistication. Perfectly situated
@@ -26,63 +54,25 @@
 			Prime LocationKamilia by Kingdom Property is perfectly situated in the heart of Langley,
 			offering unmatched convenience and connectivity.
 		</p>
-		<img alt="The project logo" src={AerialAngleOption2} class="mt-10 h-[full] object-cover" />
-		<img alt="The project logo" src={AerialAngleOption3} class="mt-1 h-[full] object-cover" />
 	</div>
-	<hr class="mx-auto mt-10 h-[2px] w-full bg-neutral-900" />
-	<div class="p-2">
-		<h2 class="mb-10 mt-8 text-center text-base font-medium">02. Title Two</h2>
-		<p>
-			Just steps away from the future SkyTrain station, residents will enjoy effortless travel to
-			surrounding areas and beyond. Proximity to a nearby university enhances the area’s vibrancy,
-			while premier shopping destinations, dining options, and entertainment venues are all within
-			easy reach. This prime location combines urban energy with the charm of Langley’s tree-lined
-			streets, making it an address of unparalleled desirability. Elevated LifestyleDesigned to
-			elevate everyday living, Kamilia offers more than just a home—it’s a gateway to a dynamic and
-			fulfilling lifestyle.
-		</p>
+	<div class="px-3 pt-3">
 		<div class="grid grid-cols-3 gap-1">
 			<img alt="The project logo" src={Dark001} class="gallery-item1 aspect-square object-cover" />
-			<img alt="The project logo" src={Light002} class="aspect-square object-cover" />
+			<img alt="The project logo" src={Dark002} class="aspect-square object-cover" />
 			<img alt="The project logo" src={Dark003} class="aspect-square object-cover" />
 		</div>
 		<div class="mt-[0.25rem] grid grid-cols-3 gap-1">
 			<img alt="The project logo" src={Light001} class="gallery-item2 aspect-square object-cover" />
-			<img alt="The project logo" src={Dark002} class="aspect-square object-cover" />
+			<img alt="The project logo" src={Light002} class="aspect-square object-cover" />
 			<img alt="The project logo" src={Light003} class="aspect-square object-cover" />
 		</div>
 	</div>
 	<hr class="mx-auto mt-10 h-[2px] w-full bg-neutral-900" />
-	<div class="p-2">
-		<h2 class="mb-10 mt-8 text-center text-base font-medium">03. Title Three</h2>
-		<p>
-			Surrounded by vibrant city life and serene green spaces, residents can seamlessly balance
-			work, leisure, and relaxation. Whether you’re exploring nearby parks, savoring local cuisine,
-			or indulging in high-end retail experiences, Kamilia places you at the center of it all.
-			Contemporary DesignKamilia embodies modern elegance with its refined architectural lines and
-			sophisticated interiors. Each home is thoughtfully designed with a focus on natural light,
-			clean aesthetics, and functional layouts. High-quality finishes and meticulous craftsmanship
-			create a timeless yet contemporary living environment that blends comfort and style
-			effortlessly.
-		</p>
-		<div class="mt-5">
-			<div class="flex items-center justify-center gap-1 overflow-hidden">
-				<img alt="The project logo" src={AerialAngleOption2} class="h-[150px] object-cover" />
-				<img alt="The project logo" src={AerialAngleOption3} class="h-[150px] object-cover" />
-			</div>
-			<img
-				alt="The project logo"
-				src={AerialAngleOption1}
-				class="mt-[0.25rem] h-[150px] object-cover"
-			/>
-		</div>
-	</div>
-	<hr class="mx-auto mt-10 h-[2px] w-full bg-neutral-900" />
-	<div class="p-2">
+	<div class="p-2 px-3">
 		<h2 class="mb-10 mt-8 text-center text-base font-medium">About Us</h2>
 
 		<img alt="The project logo" src={logo2} class="m-auto mb-5 w-[50%] object-cover" />
-		<p>
+		<p class="text-center">
 			Founded in 2015 by Anhui Jin Da Di Group, Kingdom Property Investment Ltd. (KPI) operates
 			under the Canadian-based Kingdom Development Ltd. KPI excels in delivering high-quality
 			construction management services, ensuring efficient project execution, optimized costs, and
@@ -90,7 +80,7 @@
 			projects to meet and exceed expectations.
 		</p>
 		<img alt="The project logo" src={logo1} class="m-auto mb-10 mt-10 w-[50%] object-cover" />
-		<p>
+		<p class="text-center">
 			EverProsper Development is a forward-thinking property developer shaping residential and
 			commercial spaces across Greater Vancouver. Focused on sustainability, innovation, and
 			community, our projects combine exceptional design, quality construction, and prime locations
