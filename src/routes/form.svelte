@@ -6,7 +6,6 @@
 
 	const sendEmail = (e: { preventDefault: () => void }) => {
 		e.preventDefault();
-		console.log(import.meta.env.VITE_EMAILJSTOKEN);
 
 		emailjs
 			.sendForm('service_nckisme', 'template_91r705j', form, import.meta.env.VITE_EMAILJSTOKEN)
