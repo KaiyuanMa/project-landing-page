@@ -1,9 +1,3 @@
-<script>
-	import SquareFacebook from '$lib/assets/icons/square-facebook.svelte';
-	import SquareInstagram from '$lib/assets/icons/square-instagram.svelte';
-	import SquareXTwitter from '$lib/assets/icons/square-x-twitter.svelte';
-</script>
-
 <div class="mx-5 py-32">
 	<div class="flex flex-col items-center justify-center gap-10 font-thin">
 		<p class="text-center text-xl leading-10">

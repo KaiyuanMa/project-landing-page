@@ -1,19 +1,24 @@
 <script lang="ts">
-	import BackgroundImage from '$lib/assets/background-image.jpeg';
 	import emailjs from '@emailjs/browser';
+	import { onMount } from 'svelte';
 	let form: HTMLFormElement;
+	let submitted = false;
 
 	const sendEmail = (e: { preventDefault: () => void }) => {
 		e.preventDefault();
+		console.log(form);
 
-		emailjs.sendForm('service_nckisme', 'template_n1cinwk', form.current, '').then(
-			(result) => {
-				console.log(result.text);
-			},
-			(error) => {
-				console.log(error.text);
-			}
-		);
+		emailjs
+			.sendForm('service_nckisme', 'template_91r705j', form, import.meta.env.VITE_EMAILJSTOKEN)
+			.then(
+				(result) => {
+					console.log(result.text);
+					submitted = true;
+				},
+				(error) => {
+					console.log(error);
+				}
+			);
 	};
 </script>
 
@@ -56,18 +61,18 @@
 					<label for="guest_postal_code">How did you hear about us?</label>
 					<select class="formInput" name="hear_about_us">
 						<option value="" class="text-gray-200" disabled selected> Please Select </option>
-						<option value="Google/Search Engine" class="text-gray-200" selected>
+						<option value="Google/Search Engine" class="text-gray-200">
 							Google/Search Engine
 						</option>
-						<option value="Social Media" class="text-gray-200" selected> Social Media </option>
-						<option value="Friend/Family Referral" class="text-gray-200" selected>
+						<option value="Social Media" class="text-gray-200"> Social Media </option>
+						<option value="Friend/Family Referral" class="text-gray-200">
 							Friend/Family Referral
 						</option>
-						<option value="Online Ads" class="text-gray-200" selected> Online Ads </option>
-						<option value="Event or Community Outreach" class="text-gray-200" selected>
+						<option value="Online Ads" class="text-gray-200"> Online Ads </option>
+						<option value="Event or Community Outreach" class="text-gray-200">
 							Event or Community Outreach
 						</option>
-						<option value="Other" class="text-gray-200" selected> Other </option>
+						<option value="Other" class="text-gray-200"> Other </option>
 					</select>
 				</div>
 			</div>
@@ -92,8 +97,9 @@
 			<button
 				type="submit"
 				class="mx-auto mt-5 w-fit border-b border-white font-medium uppercase tracking-wider"
+				disabled={submitted}
 			>
-				submit
+				{submitted ? 'success' : 'submit'}
 			</button>
 		</div>
 	</form>
