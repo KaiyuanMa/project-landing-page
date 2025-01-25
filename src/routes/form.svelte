@@ -8,7 +8,7 @@
 		e.preventDefault();
 
 		emailjs
-			.sendForm('service_nckisme', 'template_91r705j', form, import.meta.env.VITE_EMAILJSTOKEN)
+			.sendForm('service_reblkch', 'template_91r705j', form, import.meta.env.VITE_EMAILJSTOKEN)
 			.then(
 				(result) => {
 					console.log(result.text);
