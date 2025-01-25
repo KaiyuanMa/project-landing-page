@@ -26,54 +26,53 @@
 		class="flex w-[80%] flex-col items-center justify-center"
 	>
 		<div class="z-10 flex w-full flex-col gap-5 md:max-w-[50rem] md:gap-10">
-			<h1 class="text-2xl font-medium">Register Now</h1>
-			<div class="flex w-full flex-col gap-5 md:flex-row md:gap-10">
-				<div>
+			<h1 class="text-2xl font-medium md:text-center">Register Now</h1>
+			<div class="flex w-full flex-col gap-5 md:flex-row md:justify-between md:gap-10">
+				<div class="md:w-1/2">
 					<label for="guest_first_name">First Name*</label>
 					<input class="formInput" type="text" name="guest_first_name" required />
 				</div>
-				<div>
+				<div class="md:w-1/2">
 					<label for="guest_last_name">Last Name*</label>
 					<input class="formInput" type="text" name="guest_last_name" required />
 				</div>
 			</div>
-			<div class="flex w-full flex-col gap-5 md:flex-row md:gap-10">
-				<div>
+			<div class="flex w-full flex-col gap-5 md:flex-row md:justify-between md:gap-10">
+				<div class="md:w-1/2">
 					<label for="guest_email">Email*</label>
 					<input class="formInput" type="email" name="guest_email" required />
 				</div>
-				<div>
+				<div class="md:w-1/2">
 					<label for="guest_phone_number">Phone Number*</label>
 					<input class="formInput" type="text" name="guest_phone_number" required />
 				</div>
 			</div>
-			<div class="flex w-full flex-col gap-5 md:flex-row md:gap-10">
-				<div>
+			<div class="flex w-full flex-col gap-5 md:flex-row md:justify-between md:gap-10">
+				<div class="md:w-1/2">
 					<label for="guest_postal_code">Postal Code</label>
 					<input class="formInput" type="text" name="guest_postal_code" />
 				</div>
-				<div>
+				<div class="md:w-1/2">
 					<label for="guest_postal_code">How did you hear about us?</label>
 					<select class="formInput" name="hear_about_us">
 						<option value="" class="text-gray-200" disabled selected> Please Select </option>
-						<option value="Google/Search Engine" class="text-gray-200" disabled selected>
+						<option value="Google/Search Engine" class="text-gray-200" selected>
 							Google/Search Engine
 						</option>
-						<option value="Social Media" class="text-gray-200" disabled selected>
-							Social Media
-						</option>
-						<option value="Friend/Family Referral" class="text-gray-200" disabled selected>
+						<option value="Social Media" class="text-gray-200" selected> Social Media </option>
+						<option value="Friend/Family Referral" class="text-gray-200" selected>
 							Friend/Family Referral
 						</option>
-						<option value="Online Ads" class="text-gray-200" disabled selected> Online Ads </option>
-						<option value="Event or Community Outreach" class="text-gray-200" disabled selected>
+						<option value="Online Ads" class="text-gray-200" selected> Online Ads </option>
+						<option value="Event or Community Outreach" class="text-gray-200" selected>
 							Event or Community Outreach
 						</option>
-						<option value="Other" class="text-gray-200" disabled selected> Other </option>
+						<option value="Other" class="text-gray-200" selected> Other </option>
 					</select>
 				</div>
-
-				<div>
+			</div>
+			<div class="flex w-full flex-col gap-5 md:flex-row md:justify-between md:gap-10">
+				<div class="md:w-1/2">
 					<label for="guest_postal_code">Are you a Realtor?</label>
 					<select class="formInput" name="is_realtor">
 						<option value="" disabled selected>Please Select</option>
@@ -81,8 +80,7 @@
 						<option value="no">No</option>
 					</select>
 				</div>
-
-				<div>
+				<div class="md:w-1/2">
 					<label for="guest_postal_code">Are you working with a Realtor?</label>
 					<select class="formInput" name="is_working_with_realtor">
 						<option value="" disabled selected>Please Select</option>
@@ -108,5 +106,6 @@
 		border: 1px solid white;
 		outline: none;
 		width: 100%;
+		height: 2.5rem;
 	}
 </style>
