@@ -7,7 +7,7 @@ const sendEmail = (e: { preventDefault: () => void }) => {
 
 	const formData = new FormData(form);
 
-	fetch('https://services.leadconnectorhq.com/hooks/idzprNGF7kIgguzFCOy7/webhook-trigger/4a02602e-77b4-48ed-b88f-b2e6c3e360c2', {
+	fetch('https://services.leadconnectorhq.com/hooks/idzprNGF7kIgguzFCOy7/webhook-trigger/6512c03e-ae1e-4038-b38c-2caa0445328c', {
 		method: 'POST',
 		body: formData,
 	})
