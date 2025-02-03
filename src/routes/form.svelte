@@ -1,24 +1,28 @@
 <script lang="ts">
-	import emailjs from '@emailjs/browser';
-	import { onMount } from 'svelte';
 	let form: HTMLFormElement;
 	let submitted = false;
 
-	const sendEmail = (e: { preventDefault: () => void }) => {
-		e.preventDefault();
+const sendEmail = (e: { preventDefault: () => void }) => {
+	e.preventDefault();
 
-		emailjs
-			.sendForm('service_reblkch', 'template_91r705j', form, import.meta.env.VITE_EMAILJSTOKEN)
-			.then(
-				(result) => {
-					console.log(result.text);
-					submitted = true;
-				},
-				(error) => {
-					console.log(error);
-				}
-			);
-	};
+	const formData = new FormData(form);
+
+	fetch('https://services.leadconnectorhq.com/hooks/idzprNGF7kIgguzFCOy7/webhook-trigger/4a02602e-77b4-48ed-b88f-b2e6c3e360c2', {
+		method: 'POST',
+		body: formData,
+	})
+		.then((response) => {
+			if (response.ok) {
+				submitted = true;
+			} else {
+				console.error('Error triggering webhook:', response.statusText);
+			}
+		})
+		.catch((error) => {
+			console.error('Error:', error);
+		});
+};
+
 </script>
 
 <div
