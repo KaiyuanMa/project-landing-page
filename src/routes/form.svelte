@@ -1,28 +1,36 @@
 <script lang="ts">
+	import { fade } from 'svelte/transition';
+
 	let form: HTMLFormElement;
 	let submitted = false;
 
-const sendEmail = (e: { preventDefault: () => void }) => {
-	e.preventDefault();
+	const sendEmail = (e: { preventDefault: () => void }) => {
+		e.preventDefault();
 
-	const formData = new FormData(form);
+		const formData = new FormData(form);
 
-	fetch('https://services.leadconnectorhq.com/hooks/idzprNGF7kIgguzFCOy7/webhook-trigger/6512c03e-ae1e-4038-b38c-2caa0445328c', {
-		method: 'POST',
-		body: formData,
-	})
-		.then((response) => {
-			if (response.ok) {
-				submitted = true;
-			} else {
-				console.error('Error triggering webhook:', response.statusText);
+		fetch(
+			'https://services.leadconnectorhq.com/hooks/idzprNGF7kIgguzFCOy7/webhook-trigger/6512c03e-ae1e-4038-b38c-2caa0445328c',
+			{
+				method: 'POST',
+				body: formData
 			}
-		})
-		.catch((error) => {
-			console.error('Error:', error);
-		});
-};
-
+		)
+			.then((response) => {
+				if (response.ok) {
+					submitted = true;
+					setTimeout(() => {
+						submitted = false;
+					}, 3000);
+					form.reset();
+				} else {
+					console.error('Error triggering webhook:', response.statusText);
+				}
+			})
+			.catch((error) => {
+				console.error('Error:', error);
+			});
+	};
 </script>
 
 <div
@@ -102,11 +110,21 @@ const sendEmail = (e: { preventDefault: () => void }) => {
 				class="mx-auto mt-5 w-fit border-b border-white font-medium uppercase tracking-wider"
 				disabled={submitted}
 			>
-				{submitted ? 'success' : 'submit'}
+				submit
 			</button>
 		</div>
 	</form>
 </div>
+{#if submitted}
+	<div
+		transition:fade
+		class="fixed bottom-5 right-5 z-50 w-[80%] border-2 border-rose-gold bg-white p-2 md:w-80"
+	>
+		<p class="text-gray-700">
+			We appreciate the registration, someone will be reaching out to you soon.
+		</p>
+	</div>
+{/if}
 
 <style>
 	.formInput {
